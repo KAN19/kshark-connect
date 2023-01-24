@@ -1,7 +1,7 @@
-import { View, Text, ViewStyle } from "react-native";
-import React from "react";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { StyledProps } from "nativewind";
+import { View, Text, ViewStyle } from 'react-native';
+import React from 'react';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StyledProps } from 'nativewind';
 
 export interface ViewProps extends StyledProps<ViewStyle> {
 	children: React.ReactNode;
@@ -9,7 +9,7 @@ export interface ViewProps extends StyledProps<ViewStyle> {
 
 const BaseView: React.FC<ViewProps> = ({ children, ...rest }) => {
 	return (
-		<SafeAreaView className="p-4 flex-1" {...rest}>
+		<SafeAreaView className="flex-1" {...rest}>
 			{children}
 		</SafeAreaView>
 	);

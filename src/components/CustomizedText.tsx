@@ -1,6 +1,6 @@
-import { StyledProps } from "nativewind";
-import React from "react";
-import { Text, TextStyle } from "react-native";
+import { StyledProps } from 'nativewind';
+import React from 'react';
+import { Text, TextStyle } from 'react-native';
 
 export interface TextProps extends StyledProps<TextStyle> {
 	children: React.ReactNode;
@@ -32,7 +32,7 @@ export const Heading2: React.FC<TextProps> = ({ children, ...rest }) => {
 
 export const Heading3: React.FC<TextProps> = ({ children, ...rest }) => {
 	return (
-		<Text className="text-lg" {...rest}>
+		<Text className="text-base" {...rest}>
 			{children}
 		</Text>
 	);
