@@ -1,14 +1,15 @@
 import type {
 	CompositeScreenProps,
 	NavigatorScreenParams,
-} from "@react-navigation/native";
-import type { StackScreenProps } from "@react-navigation/stack";
-import type { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
+} from '@react-navigation/native';
+import type { StackScreenProps } from '@react-navigation/stack';
+import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 
 export type RootStackParamList = {
 	Home: undefined;
 	EndCallScreen: undefined;
 	InputCodeScreen: undefined;
+	CallingScreen: undefined;
 };
 
 export type RootStackScreenProps<T extends keyof RootStackParamList> =

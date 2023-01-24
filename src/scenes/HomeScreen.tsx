@@ -42,7 +42,13 @@ const HomePage = ({ navigation, route }: RootStackScreenProps<'Home'>) => {
 				className="justify-end m-0"
 			>
 				<View className="bg-white rounded-sm p-5 space-y-4">
-					<TouchableOpacity className="flex-row space-x-2 items-center">
+					<TouchableOpacity
+						className="flex-row space-x-2 items-center"
+						onPress={() => {
+							navigation.navigate('CallingScreen');
+							setIsModalVisible(false);
+						}}
+					>
 						<FontAwesomeIcon icon={faVideo} size={20} />
 						<Heading3>Start an instant meeting</Heading3>
 					</TouchableOpacity>

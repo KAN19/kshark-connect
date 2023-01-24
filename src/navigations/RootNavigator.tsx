@@ -6,6 +6,7 @@ import HomePage from 'scenes/HomeScreen';
 import EndCallScreen from 'scenes/EndCallScreen';
 import InputCodeScreen from 'scenes/InputCodeScreen';
 import HomeHeader from 'components/home-header/HomeHeader';
+import CallingScreen from 'scenes/CallingScreen';
 
 type Props = {};
 
@@ -25,6 +26,11 @@ const RootNavigator = (props: Props) => {
 				options={{ header: () => <HomeHeader /> }}
 			/>
 			<RootStack.Screen name="EndCallScreen" component={EndCallScreen} />
+			<RootStack.Screen
+				name="CallingScreen"
+				component={CallingScreen}
+				options={{ headerShown: false }}
+			/>
 			<RootStack.Screen
 				name="InputCodeScreen"
 				component={InputCodeScreen}
