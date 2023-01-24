@@ -12,6 +12,8 @@ import Modal from 'react-native-modal';
 const HomePage = ({ navigation, route }: RootStackScreenProps<'Home'>) => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
 
+	//Todo: handle create a meet
+
 	return (
 		<BaseView>
 			<View className="space-y-2 px-4">
@@ -20,13 +22,15 @@ const HomePage = ({ navigation, route }: RootStackScreenProps<'Home'>) => {
 						onPress={() => setIsModalVisible(true)}
 						className="bg-[#00AC47] py-2 px-4 rounded-md w-1/2 items-center"
 					>
-						<Text className="text-white">Create a meet</Text>
+						<Text className="text-white font-semibold">
+							Create a meet
+						</Text>
 					</TouchableOpacity>
 					<TouchableOpacity
 						className=" py-2 px-4 rounded-md bg-slate-200 w-1/2 items-center"
 						onPress={() => navigation.navigate('InputCodeScreen')}
 					>
-						<Text>Join with a code</Text>
+						<Text className="font-semibold">Join with a code</Text>
 					</TouchableOpacity>
 				</View>
 			</View>
